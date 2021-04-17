@@ -1,0 +1,109 @@
+.offerBody {
+  background-color: #ebedee;
+  height: calc(100vh - 60px);
+}
+
+.offerContainer {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 30px;
+  gap: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.offerPicture {
+  height: 600px;
+  object-fit: cover;
+}
+
+.offerInfos {
+  background-color: white;
+  width: 320px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offerPrice {
+  font-size: 24px;
+  line-height: 32px;
+  color: #111;
+}
+
+.offerList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.offerList li {
+  display: flex;
+  padding: 2px 0;
+}
+
+.offerList span {
+  flex: 1;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.listTitleColor {
+  color: #999;
+}
+
+.listColor {
+  color: #666;
+  font-weight: bold;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(17, 17, 17, 0.1);
+}
+
+.name {
+  font-weight: bold;
+}
+
+.description {
+  color: #666;
+}
+
+.offerAvatarUsername {
+  display: flex;
+  align-items: center;
+}
+
+.offerAvatarUsername > img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.buttonBuy {
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background: #09b1ba;
+  border: solid 1px #09b1ba;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  height: 36px;
+  padding: 0 16px;
+  line-height: 36px;
+  margin-top: 32px;
+}
+
+.buttonBuy:hover {
+  background: #09adb6;
+}
+
+.buttonBuy:active {
+  background: #09a3ac;
+}

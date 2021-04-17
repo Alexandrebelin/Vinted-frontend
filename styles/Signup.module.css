@@ -1,0 +1,83 @@
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.signupForm {
+  display: flex;
+  width: 275px;
+  margin: auto;
+  flex-direction: column;
+}
+
+.signupForm > input {
+  border: none;
+  border-bottom: 1px solid #fcced3;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.signupForm > input::placeholder {
+  color: #cbcccd;
+  font-size: 16px;
+}
+
+.signupForm input[type="checkbox"] {
+  transform: scale(2);
+  margin-right: 20px;
+}
+
+.checkboxContainer {
+  margin-top: 20px;
+  padding: 10px;
+}
+.checkboxContainer > div {
+  display: flex;
+}
+
+.checkboxContainer > p {
+  text-align: left;
+  color: #999999;
+  font-size: 12px;
+}
+
+.checkboxContainer > span {
+  color: #666666;
+}
+
+.signupLoginError {
+  color: red;
+  font-size: 9px;
+}
+
+.signupForm button {
+  cursor: pointer;
+  background-color: #2cb1ba;
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.signupForm button:hover {
+  background: #09adb6;
+}
+
+.signupForm button:active {
+  background: #09a3ac;
+}
+
+.linkToLogin {
+  cursor: pointer;
+  text-decoration: none;
+  color: #2cb1ba;
+  margin-top: 10px;
+  font-size: 12px;
+}

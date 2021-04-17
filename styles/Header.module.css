@@ -1,0 +1,28 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.headerLogo {
+  height: 30px;
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchInput {
+  width: 590px;
+  padding-left: 40px;
+  background-color: #f5f6f7;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
