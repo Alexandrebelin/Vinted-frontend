@@ -1,0 +1,221 @@
+.publishMain {
+  background-color: #ebedee;
+}
+
+.publishContainer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.publishMain h2 {
+  font-size: 24px;
+  padding-top: 40px;
+}
+
+.fileSelect {
+  background-color: white;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 0 2px gray;
+}
+
+.fileSelect > p {
+  margin: 0 0 10px 0;
+}
+
+.dashedPreviewImage {
+  border: 1px #ebedee dashed;
+  border-radius: 3px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.dashedPreviewImage img {
+  height: 90%;
+  margin: 0 10px;
+}
+.removeImgButton {
+  position: relative;
+  color: black;
+  background-color: white;
+  right: 60px;
+  bottom: 70px;
+  height: 25px;
+  line-height: 25px;
+  width: 30px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dashedPreviewWithout {
+  border: 1px #ebedee dashed;
+  border-radius: 3px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDesignDefault {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0ab1ba;
+  border-radius: 4px;
+  height: 45px;
+  width: 200px;
+}
+
+.labelFile {
+  cursor: pointer;
+  color: #0ab1ba;
+  font-weight: bold;
+}
+.labelFile > span {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.labelFile:hover {
+  color: #25a5c4;
+}
+
+.inputSign {
+  font-size: 40px;
+}
+
+.inputFile {
+  display: none;
+}
+
+.textInputSection {
+  background-color: white;
+  margin: 20px 0;
+  box-shadow: 0 0 2px gray;
+}
+.textInputSection > .textInput:not(:last-child) {
+  height: 25px;
+  border-bottom: 1px solid #ebedee;
+  vertical-align: center;
+}
+.textInputSection label {
+  color: #666666;
+}
+.textInput {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.textInput > h4 {
+  font-weight: normal;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.textInput > input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  color: black;
+  font-family: "Maison Neue";
+  font-size: 16px;
+  outline: none;
+}
+
+.textInput > textarea {
+  width: 50%;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  outline: none;
+  color: black;
+  font-size: 16px;
+}
+
+.textInput > textarea:focus {
+  border-bottom: 1px solid #0ab1ba;
+  background-color: white;
+}
+
+.textInput > textarea::placeholder {
+  font-size: 16px;
+  color: #c4c7c9;
+}
+
+.textInput > input:focus {
+  border-bottom: 1px solid #0ab1ba;
+}
+
+.textInput > input::placeholder {
+  font-size: 16px;
+  color: #c4c7c9;
+}
+
+.checkboxSection {
+  width: 50%;
+}
+
+.checkboxSection > input:focus {
+  border-bottom: 1px solid #0ab1ba;
+}
+
+.checkboxSection > input {
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.checkboxSection > input::placeholder {
+  font-size: 16px;
+  color: #c4c7c9;
+}
+
+.checkboxInput > input {
+  display: none;
+}
+
+.checkboxDesignChecked {
+  border-radius: 3px;
+  padding: 3px 6px 3px 6px;
+  margin: 0 15px 0 0;
+  background-color: #0ab1ba;
+}
+
+.checkboxDesign {
+  border-radius: 3px;
+  padding: 3px 6px 3px 6px;
+  margin: 0 15px 0 0;
+  background-color: #0ab1ba;
+}
+
+.formButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formValidtaion {
+  background-color: #0ab1ba;
+  color: white;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  border-radius: 4px;
+  padding: 12px 12px;
+  margin: 50px 0;
+}
+
+.saveOffer {
+  background-color: transparent;
+  color: #0ab1ba;
+  border: 1px solid #0ab1ba;
+  font: inherit;
+  outline: inherit;
+  border-radius: 4px;
+  padding: 12px 12px;
+  margin: 50px 15px 50px 0;
+}

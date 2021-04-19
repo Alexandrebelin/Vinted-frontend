@@ -1,7 +1,11 @@
+import Link from "next/link";
+import { useCookies } from "react-cookie";
 import Card from "./Card";
 import styles from "../styles/Home.module.css";
 
 const Main = ({ data }) => {
+  const [cookie, setCookies, removeCookie] = useCookies(["user"]);
+  const token = cookie.user;
   return (
     <main>
       <div className={styles.homeImgBackGround}>
@@ -13,7 +17,15 @@ const Main = ({ data }) => {
         <div>
           <div className={styles.homeHeroReady}>
             Prêts à faire du tri dans vos placards ?
-            <button>Commencer à vendre</button>
+            {token ? (
+              <Link href="/publish">
+                <button>Vendre tes articles</button>
+              </Link>
+            ) : (
+              <Link href="/login">
+                <button>Vendre tes articles</button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

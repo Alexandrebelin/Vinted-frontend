@@ -26,3 +26,44 @@
   outline: none;
   font-size: 16px;
 }
+
+.searchInput::placeholder {
+  color: #cbcccd;
+  font-size: 16px;
+}
+
+.headerButton {
+  height: 30px;
+  width: 115px;
+  border: 1px solid #2cb1ba;
+  border-radius: 5px;
+  font-family: "Maison Neue";
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonLogout {
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Maison Neue";
+  font-size: 12px;
+  outline: none;
+  border: none;
+  background-color: #c2175b;
+  color: white;
+}
+
+.buttonLoginSignup {
+  background-color: white;
+  color: #2cb1ba;
+}
+
+.buttonSold {
+  background-color: #2cb1ba;
+  color: white;
+}
+
+.buttonSignup {
+  margin-right: 20px;
+}

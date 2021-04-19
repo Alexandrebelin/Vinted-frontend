@@ -5,8 +5,6 @@ import { useCookies } from "react-cookie";
 
 const Header = () => {
   const [cookie, setCookies, removeCookie] = useCookies(["user"]);
-
-  console.log(cookie.user);
   const token = cookie.user;
 
   const handlDelete = (e) => {
@@ -23,7 +21,7 @@ const Header = () => {
           />
         </Link>
       </div>
-      <div className={styles.searchConayiner}>
+      <div className={styles.searchContainer}>
         <input
           type="text"
           placeholder="Rechercher des articles"
@@ -32,18 +30,40 @@ const Header = () => {
       </div>
 
       {token ? (
-        <button onClick={handlDelete}>Se déconnecter</button>
+        <button onClick={handlDelete} className={styles.buttonLogout}>
+          Se déconnecter
+        </button>
       ) : (
         <div>
           <Link href="/signup">
-            <button>S'inscrire</button>
+            <button
+              className={`${styles.headerButton} ${styles.buttonLoginSignup} ${styles.buttonSignup}`}
+            >
+              S'inscrire
+            </button>
           </Link>
           <Link href="/login">
-            <button>Se connecter</button>
+            <button
+              className={`${styles.headerButton} ${styles.buttonLoginSignup}`}
+            >
+              Se connecter
+            </button>
           </Link>
         </div>
       )}
-      <button>Vendre tes articles</button>
+      {token ? (
+        <Link href="/publish">
+          <button className={`${styles.headerButton} ${styles.buttonSold}`}>
+            Vendre tes articles
+          </button>
+        </Link>
+      ) : (
+        <Link href="/login">
+          <button className={`${styles.headerButton} ${styles.buttonSold}`}>
+            Vendre tes articles
+          </button>
+        </Link>
+      )}
     </header>
   );
 };

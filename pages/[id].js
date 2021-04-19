@@ -64,7 +64,6 @@ export default Offer;
 export const getServerSideProps = async (context) => {
   try {
     const id = context.query.id;
-    console.log(context);
 
     const response = await axios.get(
       `https://lereacteur-vinted-api.herokuapp.com/offer/${id}`
