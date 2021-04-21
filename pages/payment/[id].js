@@ -3,10 +3,17 @@ import axios from "axios";
 import styles from "../../styles/Payment.module.css";
 import ProductCheckout from "../../components/PoductCheckout";
 
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import CheckoutForm from "../../components/CheckoutForm";
+
 const Payment = ({ data }) => {
   const router = useRouter();
   const { id } = router.query;
-  console.log(id);
+
+  const stripePromise = loadStripe(
+    "pk_test_51ILSxNDavfq8HosR7YRix7vfdMtcauX2TU8CVao14w8bvK1yj1xA2eNgQtMgzsjVMYRt3Id5I5pXtQKFvXegalv600T32lGziV"
+  );
 
   const number = data.price + 0.4 + 0.8;
 
@@ -29,6 +36,9 @@ const Payment = ({ data }) => {
             <span className={styles.bold}> {total} €</span> (frais de protection
             et frais de port inclus).
             <div className={styles.divider}></div>
+            <Elements stripe={stripePromise}>
+              <CheckoutForm productName={data.name} total={total} />
+            </Elements>
           </div>
         </div>
       </div>
