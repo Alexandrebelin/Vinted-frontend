@@ -8,8 +8,7 @@ const CheckoutForm = ({ productName, total }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [cookie, setCookie] = useCookies(["user"]);
-  console.log(cookie.user);
-  const token = toString(cookie.user);
+  const token = cookie.user;
 
   const handleSubmit = async (e) => {
     try {
@@ -40,7 +39,7 @@ const CheckoutForm = ({ productName, total }) => {
     <form onSubmit={handleSubmit}>
       <CardElement />
       <button type="submit" disabled={!stripe}>
-        Pay
+        Pay now
       </button>
     </form>
   );

@@ -2,10 +2,13 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import styles from "../styles/Offer.module.css";
 import Link from "next/link";
+import { useCookies } from "react-cookie";
 
 const Offer = ({ data }) => {
   const router = useRouter();
   const { id } = router.query;
+  const [cookie, setCookies, removeCookie] = useCookies(["user"]);
+  const token = cookie.user;
 
   return (
     <div className={styles.offerBody}>
@@ -54,9 +57,15 @@ const Offer = ({ data }) => {
               <span>{data.owner && data.owner.account.username}</span>
             </div>
           </div>
-          <Link href={`/payment/${id}`}>
-            <button className={styles.buttonBuy}>Acheter</button>
-          </Link>
+          {token ? (
+            <Link href={`/payment/${id}`}>
+              <button className={styles.buttonBuy}>Acheter</button>
+            </Link>
+          ) : (
+            <Link href="/login">
+              <button className={styles.buttonBuy}>Acheter</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
