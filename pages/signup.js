@@ -14,16 +14,22 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [file, setFile] = useState({});
   const [errorMessage, setErrorMessage] = useState(null);
 
   const handleSignUp = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3100/user/signup", {
-        email: email,
-        password: password,
-        username: username,
-      });
+      const formData = new FormData();
+      formData.append("avatar", file);
+      formData.append("email", email);
+      formData.append("password", password);
+      formData.append("username", username);
+
+      const response = await axios.post(
+        "http://localhost:3100/user/signup",
+        formData
+      );
       const token = response.data.token;
       if (token) {
         setCookie("user", token, {
@@ -72,6 +78,13 @@ const Signup = () => {
           value={password}
           onChange={(event) => {
             setPassword(event.target.value);
+          }}
+        />
+        <input
+          type="file"
+          id="file"
+          onChange={(event) => {
+            setFile(event.target.files[0]);
           }}
         />
         <div className={styles.checkboxContainer}>

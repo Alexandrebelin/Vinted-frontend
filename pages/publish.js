@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useCookies } from "react-cookie";
+import Link from "next/link";
 
 import styles from "../styles/Publish.module.css";
+import axios from "axios";
 
 const Publish = () => {
   const router = useRouter();
@@ -22,11 +24,46 @@ const Publish = () => {
   const [city, setCity] = useState("");
   const [acceptedExchange, setAcceptedExchange] = useState(false);
 
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+
+      const formData = new FormData();
+      formData.append("picture", file);
+      formData.append("title", title);
+      formData.append("description", description);
+      formData.append("price", price);
+      formData.append("size", selectedSize);
+      formData.append("color", color);
+      formData.append("condition", selectedWearRate);
+      formData.append("city", city);
+      formData.append("brand", selectedBrand);
+
+      const response = await axios.post(
+        "http://localhost:3100/offer/publish",
+        formData,
+        {
+          headers: {
+            Authorization: "Bearer " + token,
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      if (response.data._id) {
+        router.push("/");
+      } else {
+        alert("Une erreur est survenue, veuillez réssayer");
+      }
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
   return (
     <div className={styles.publishMain}>
       <div className={styles.publishContainer}>
         <h2>Vends ton article</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.fileSelect}>
             {preview ? (
               <div className={styles.dashedPreviewImage}>

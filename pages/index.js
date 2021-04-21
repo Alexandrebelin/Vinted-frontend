@@ -16,9 +16,7 @@ export default Home;
 
 export const getServerSideProps = async (context) => {
   try {
-    const response = await axios.get(
-      "https://lereacteur-vinted-api.herokuapp.com/offers"
-    );
+    const response = await axios.get("http://localhost:3100/offers");
 
     return {
       props: {
