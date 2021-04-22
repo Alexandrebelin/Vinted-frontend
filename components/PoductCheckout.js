@@ -2,7 +2,7 @@ import styles from "../styles/Payment.module.css";
 
 const ProductCheckout = ({ price, total }) => {
   return (
-    <div className={styles.paymentCardSummary}>
+    <div className={styles.paymentCard}>
       <div className={styles.title}>Résumé de la commande</div>
       <div className={styles.content}>
         <ul>

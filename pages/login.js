@@ -37,7 +37,7 @@ const Login = () => {
         alert("Une erreur est survenue, veuillez réssayer.");
       }
     } catch (error) {
-      console.log(err);
+      console.log(error);
     }
   };
 
