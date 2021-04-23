@@ -3,14 +3,15 @@ import styles from "../styles/Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      2021 © Made with&nbsp;<strong>React.js</strong>&nbsp; by&nbsp;
       <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
+        href="https://github.com/Alexandrebelin"
         rel="noopener noreferrer"
+        target="_blank"
       >
-        Powered by{" "}
-        <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+        Alexandre Belin
       </a>
+      .
     </footer>
   );
 };
