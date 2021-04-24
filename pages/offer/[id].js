@@ -1,8 +1,9 @@
 import { useRouter } from "next/router";
 import axios from "axios";
-import styles from "../styles/Offer.module.css";
 import Link from "next/link";
 import { useCookies } from "react-cookie";
+
+import styles from "../../styles/Offer.module.css";
 
 const Offer = ({ data }) => {
   const router = useRouter();

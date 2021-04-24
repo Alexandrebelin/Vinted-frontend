@@ -1,7 +1,7 @@
-import styles from "../styles/Header.module.css";
 import Link from "next/link";
-
 import { useCookies } from "react-cookie";
+
+import styles from "../styles/Header.module.css";
 
 const Header = () => {
   const [cookie, setCookies, removeCookie] = useCookies(["user"]);
@@ -28,6 +28,7 @@ const Header = () => {
           className={styles.searchInput}
         />
       </div>
+      {/* <PriceRange /> */}
 
       {token ? (
         <button onClick={handlDelete} className={styles.buttonLogout}>

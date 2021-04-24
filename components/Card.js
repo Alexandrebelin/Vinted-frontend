@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 import styles from "../styles/Home.module.css";
@@ -8,7 +7,7 @@ const Card = ({ data }) => {
   return (
     <div
       className={styles.cardContainer}
-      onClick={() => router.push(`/${data._id}`)}
+      onClick={() => router.push(`/offer/${data._id}`)}
     >
       <div className={styles.cardAvatartUsername}>
         {data.owner && data.owner.account.avatar && (

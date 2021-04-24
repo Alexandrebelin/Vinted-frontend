@@ -1,7 +1,6 @@
-import Footer from "../components/Footer";
-import Main from "../components/Main";
-
 import axios from "axios";
+
+import Main from "../components/Main";
 
 const Home = ({ data, error }) => {
   return (

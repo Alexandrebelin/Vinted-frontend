@@ -1,11 +1,12 @@
 import { useRouter } from "next/router";
 import axios from "axios";
-import styles from "../../styles/Payment.module.css";
-import ProductCheckout from "../../components/PoductCheckout";
-
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+
+import ProductCheckout from "../../components/PoductCheckout";
 import CheckoutForm from "../../components/CheckoutForm";
+
+import styles from "../../styles/Payment.module.css";
 
 const Payment = ({ data }) => {
   const router = useRouter();

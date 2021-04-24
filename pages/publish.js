@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useCookies } from "react-cookie";
-import Link from "next/link";
+import axios from "axios";
 
 import styles from "../styles/Publish.module.css";
-import axios from "axios";
 
 const Publish = () => {
   const router = useRouter();
