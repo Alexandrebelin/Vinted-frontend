@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useCookies } from "react-cookie";
 
 import styles from "../styles/Header.module.css";
+import ProductSearch from "./ProductSearch";
 
 const Header = () => {
   const [cookie, setCookies, removeCookie] = useCookies(["user"]);
@@ -21,13 +22,7 @@ const Header = () => {
           />
         </Link>
       </div>
-      <div className={styles.searchContainer}>
-        <input
-          type="text"
-          placeholder="Rechercher des articles"
-          className={styles.searchInput}
-        />
-      </div>
+      <ProductSearch />
       {/* <PriceRange /> */}
 
       {token ? (
