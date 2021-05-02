@@ -9,7 +9,7 @@ const ProductSearch = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    router.push({ pathname: `/search`, query: { text: search } });
+    router.push({ pathname: `/search`, query: { title: search } });
     setSearch("");
   };
 

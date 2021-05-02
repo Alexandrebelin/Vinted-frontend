@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 const Card = ({ data }) => {
   const router = useRouter();
+
   return (
     <div
       className={styles.cardContainer}
@@ -19,8 +20,8 @@ const Card = ({ data }) => {
         <img src={data.image.secure_url} alt={data.name} />
         <div className={styles.cardPriceSizeBrand}>
           <span>{data.price} €</span>
-          <span>{data.details[1]["TAILLE"]}</span>
-          <span>{data.details[0]["MARQUE"]}</span>
+          <span>{data.details[1].size}</span>
+          <span>{data.details[0].brand}</span>
         </div>
       </div>
     </div>
