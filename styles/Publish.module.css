@@ -158,16 +158,16 @@
   width: 50%;
 }
 
-.checkboxSection > input:focus {
-  border-bottom: 1px solid #0ab1ba;
-}
-
 .checkboxSection > input {
   border: none;
   border-bottom: 1px solid #ebedee;
   color: black;
   font-size: 16px;
   margin-bottom: 40px;
+}
+
+.checkboxSection > input:focus {
+  border-bottom: 1px solid #0ab1ba;
 }
 
 .checkboxSection > input::placeholder {
@@ -188,9 +188,9 @@
 
 .checkboxDesign {
   border-radius: 3px;
-  padding: 3px 6px 3px 6px;
+  padding: 2px 11px 2px 11px;
   margin: 0 15px 0 0;
-  background-color: #0ab1ba;
+  border: 1px solid black;
 }
 
 .formButton {

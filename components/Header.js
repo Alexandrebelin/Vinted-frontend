@@ -23,11 +23,10 @@ const Header = () => {
         </Link>
       </div>
       <ProductSearch />
-      {/* <PriceRange /> */}
 
       {token ? (
         <button onClick={handlDelete} className={styles.buttonLogout}>
-          Se déconnecter
+          Log out
         </button>
       ) : (
         <div>
@@ -35,14 +34,14 @@ const Header = () => {
             <button
               className={`${styles.headerButton} ${styles.buttonLoginSignup} ${styles.buttonSignup}`}
             >
-              S'inscrire
+              Sign up
             </button>
           </Link>
           <Link href="/login">
             <button
               className={`${styles.headerButton} ${styles.buttonLoginSignup}`}
             >
-              Se connecter
+              Log in
             </button>
           </Link>
         </div>
@@ -50,13 +49,13 @@ const Header = () => {
       {token ? (
         <Link href="/publish">
           <button className={`${styles.headerButton} ${styles.buttonSold}`}>
-            Vendre tes articles
+            Sell now
           </button>
         </Link>
       ) : (
         <Link href="/login">
           <button className={`${styles.headerButton} ${styles.buttonSold}`}>
-            Vendre tes articles
+            Sell now
           </button>
         </Link>
       )}

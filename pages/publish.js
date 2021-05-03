@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useCookies } from "react-cookie";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 
 import styles from "../styles/Publish.module.css";
@@ -202,7 +203,9 @@ const Publish = () => {
                     <label
                       htmlFor="exchange"
                       className={styles.checkboxDesignChecked}
-                    ></label>
+                    >
+                      <FontAwesomeIcon icon="check" size="xs" color="white" />
+                    </label>
                   ) : (
                     <label
                       htmlFor="exchange"

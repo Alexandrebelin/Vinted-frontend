@@ -1,4 +1,7 @@
 import { CookiesProvider } from "react-cookie";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faSearch, faCheck } from "@fortawesome/free-solid-svg-icons";
+library.add(faSearch, faCheck);
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";

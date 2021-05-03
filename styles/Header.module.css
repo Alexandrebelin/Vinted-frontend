@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 1280px;
   margin: auto;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .headerLogo {
@@ -30,6 +30,13 @@
 .searchInput::placeholder {
   color: #cbcccd;
   font-size: 16px;
+}
+
+.searchInputIcon {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  color: #bbbbbb;
 }
 
 .headerButton {

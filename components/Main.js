@@ -18,14 +18,14 @@ const Main = ({ data }) => {
         />
         <div>
           <div className={styles.homeHeroReady}>
-            Prêts à faire du tri dans vos placards ?
+            Ready to declutter your wardrobe ?
             {token ? (
               <Link href="/publish">
-                <button>Vendre tes articles</button>
+                <button>Sell now</button>
               </Link>
             ) : (
               <Link href="/login">
-                <button>Vendre tes articles</button>
+                <button>Sell now</button>
               </Link>
             )}
           </div>
