@@ -1,4 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vinted Clone - React
+
+<img src="https://github.com/teddy-beau/vinted-front/blob/main/src/assets/images/vinted-logo.png?raw=true" alt="Vinted logo" width="170" />
+<br />
+<br />
+<a href="https://vinted-teddy.netlify.app/" target="_blank" rel="noreferrer" >Live site (Netlify deploy)</a>
+<br />
+<a href="https://github.com/Alexandrebelin/Vinted-backend" target="_blank" rel="noreferrer" >Backend repository</a>
+<br />
+<br />
+<img src="./_preview/vinted-login-buy.gif" alt="Gif login and purchase" width="600" />
+</div>
+
+## Stack & Features
+
+Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).. The backend is developed with [Node JS](https://github.com/Alexandrebelin/Vinted-backend) and the database uses Mongo DB cloud-based solution.
+
+_Please note that this project should be viewed on desktop only, it has very basic responsiveness and isn't well suported on mobile devices at the moment._
+
+### Main dependencies
+
+- Stripe (payment)
+- Axios (API requests)
+- cookie (cookie management)
+- react-cookie (cookie management)
+- next-image (file upload)
+- Fontawesome (icons)
+
+### Main features
+
+Login and Signup
+Search with filters
+Publish and modify an offer
+Pay and buy with Stripe
+
+## Screenshots
+
+<div align="center">
+
+**Homepage with dynamic search filters:**
+
+<img src="./_preview/vinted-home.png" alt="Screenshot Vinted Homepage" width="600"/>
+<br />
+<br />
+
+**Signup modal:**
+
+<img src="./_preview/vinted-signup.png" alt="Screenshot Vinted Sign up" width="600"/>
+<br />
+<br />
+
+**Publishing an offer:**
+
+<img src="./_preview/vinted-publish.png" alt="Screenshot Vinted Publish" width="600"/>
+<br />
+<br />
+
+**Offer page:**
+
+<img src="./_preview/vinted-offer.png" alt="Screenshot Vinted Offer" width="600"/>
+<br />
+<br />
+
+**Checkout (payment with Stripe):**
+
+<img src="./_preview/vinted-checkout.png" alt="Screenshot Vinted Checkout" width="600"/></div>
 
 ## Getting Started
 
@@ -11,24 +76,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

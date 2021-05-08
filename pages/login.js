@@ -41,35 +41,37 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.signupContainer}>
-      <h2>Se connecter</h2>
-      <form className={styles.signupForm} onSubmit={handleSignIn}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(event) => {
-            setEmail(event.target.value);
-            setErrorMessage("");
-          }}
-        />
-        <span className={styles.signupLoginError}>{errorMessage}</span>
-        <input
-          type="password"
-          placeholder="Mot de passe"
-          value={password}
-          onChange={(event) => {
-            setPassword(event.target.value);
-          }}
-        />
+    <div className={styles.signupMiddle}>
+      <div className={styles.signupContainer}>
+        <h2>Se connecter</h2>
+        <form className={styles.signupForm} onSubmit={handleSignIn}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(event) => {
+              setEmail(event.target.value);
+              setErrorMessage("");
+            }}
+          />
+          <span className={styles.signupLoginError}>{errorMessage}</span>
+          <input
+            type="password"
+            placeholder="Mot de passe"
+            value={password}
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
+          />
 
-        <button type="submit">Se connecter</button>
-      </form>
-      <Link href="/signup">
-        <p className={styles.linkToLogin}>
-          Pas encore de compte ? Inscris-toi !
-        </p>
-      </Link>
+          <button type="submit">Se connecter</button>
+        </form>
+        <Link href="/signup">
+          <p className={styles.linkToLogin}>
+            Pas encore de compte ? Inscris-toi !
+          </p>
+        </Link>
+      </div>
     </div>
   );
 };

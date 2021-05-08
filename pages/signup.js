@@ -50,60 +50,62 @@ const Signup = () => {
   };
 
   return (
-    <div className={styles.signupContainer}>
-      <h2>S'inscrire</h2>
-      <form className={styles.signupForm} onSubmit={handleSignUp}>
-        <input
-          type="text"
-          placeholder="Nom d'utilisateur"
-          value={username}
-          onChange={(event) => {
-            setUsername(event.target.value);
-          }}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(event) => {
-            setEmail(event.target.value);
-            setErrorMessage("");
-          }}
-        />
-        <span className={styles.signupLoginError}>{errorMessage}</span>
-        <input
-          type="password"
-          placeholder="Mot de passe"
-          value={password}
-          onChange={(event) => {
-            setPassword(event.target.value);
-          }}
-        />
-        <input
-          type="file"
-          id="file"
-          onChange={(event) => {
-            setFile(event.target.files[0]);
-          }}
-        />
-        <div className={styles.checkboxContainer}>
-          <div>
-            <input type="checkbox" />
-            <span>S'inscrire à notre newsletter</span>
+    <div className={styles.signupmiddle}>
+      <div className={styles.signupContainer}>
+        <h2>S'inscrire</h2>
+        <form className={styles.signupForm} onSubmit={handleSignUp}>
+          <input
+            type="text"
+            placeholder="Nom d'utilisateur"
+            value={username}
+            onChange={(event) => {
+              setUsername(event.target.value);
+            }}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(event) => {
+              setEmail(event.target.value);
+              setErrorMessage("");
+            }}
+          />
+          <span className={styles.signupLoginError}>{errorMessage}</span>
+          <input
+            type="password"
+            placeholder="Mot de passe"
+            value={password}
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
+          />
+          <input
+            type="file"
+            id="file"
+            onChange={(event) => {
+              setFile(event.target.files[0]);
+            }}
+          />
+          <div className={styles.checkboxContainer}>
+            <div>
+              <input type="checkbox" />
+              <span>S'inscrire à notre newsletter</span>
+            </div>
+            <p>
+              En m'inscrivant je confirme avoir lu et accepté les Termes &
+              Conditions et Politique de Confidentialité de Vinted. Je confirme
+              avoir au moins 18 ans.
+            </p>
           </div>
-          <p>
-            En m'inscrivant je confirme avoir lu et accepté les Termes &
-            Conditions et Politique de Confidentialité de Vinted. Je confirme
-            avoir au moins 18 ans.
+          <button type="submit">S'inscrire</button>
+        </form>
+        <Link href="/login">
+          <p className={styles.linkToLogin}>
+            Tu as déjà un compte ? Connecte-toi !
           </p>
-        </div>
-        <button type="submit">S'inscrire</button>
-      </form>
-      <Link href="/login">
-        <p className={styles.linkToLogin}>
-          Tu as déjà un compte ? Connecte-toi !
-        </p>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 };
