@@ -1,4 +1,4 @@
-# Vinted Clone - React
+# Vinted Clone - React/Next.js
 
 <img src="https://github.com/teddy-beau/vinted-front/blob/main/src/assets/images/vinted-logo.png?raw=true" alt="Vinted logo" width="170" />
 <br />
