@@ -38,10 +38,15 @@ Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](http
 ### Main dependencies
 
  Stripe (payment)
+ <br />
  Axios (API requests)
+ <br />
  cookie (cookie management)
+ <br />
  react-cookie (cookie management)
+ <br />
  next-image (file upload)
+ <br />
  Fontawesome (icons)
 
 ### Main features
