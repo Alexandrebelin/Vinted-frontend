@@ -3,6 +3,7 @@
 <div align="center">
 <img src="./assets/images/logo.png" alt="Vinted logo" width="170" />
 <br />
+  <br />
 <a href="https://github.com/Alexandrebelin/Vinted-backend" target="_blank" rel="noreferrer" >Backend repository</a>
 <br />
 <br />
@@ -33,12 +34,12 @@ _Please note that this project should be viewed on desktop only, it has very bas
 
 ### Main dependencies
 
-- Stripe (payment)
-- Axios (API requests)
-- cookie (cookie management)
-- react-cookie (cookie management)
-- next-image (file upload)
-- Fontawesome (icons)
+ Stripe (payment)
+ Axios (API requests)
+ cookie (cookie management)
+ react-cookie (cookie management)
+ next-image (file upload)
+ Fontawesome (icons)
 
 ### Main features
 
