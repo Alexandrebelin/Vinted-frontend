@@ -18,20 +18,20 @@ const Main = ({ data }) => {
         />
         <div>
           <div className={styles.homeHeroReady}>
-            Ready to declutter your wardrobe ?
+            Prêts à faire du tri dans vos placards ?
             {token ? (
               <Link href="/publish">
-                <button>Sell now</button>
+                <button>Commencer à vendre</button>
               </Link>
             ) : (
               <Link href="/login">
-                <button>Sell now</button>
+                <button>Commencer à vendre</button>
               </Link>
             )}
           </div>
         </div>
       </div>
-      <div className={styles.honeCardsWrapper}>
+      <div className={styles.homeCardsWrapper}>
         {data.offers.map((card, index) => {
           return <Card key={index} data={card} />;
         })}

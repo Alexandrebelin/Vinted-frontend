@@ -9,7 +9,7 @@ const Search = ({ data }) => {
   const { title } = router.query;
 
   return (
-    <div className={styles.honeCardsWrapper}>
+    <div className={styles.homeCardsWrapper}>
       {data.offers.map((data, index) => {
         return <Card key={index} data={data} />;
       })}

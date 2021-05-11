@@ -19,7 +19,7 @@ const ProductSearch = () => {
       <form onSubmit={handleSearch}>
         <input
           type="search"
-          placeholder="Search for items"
+          placeholder="Recherche des articles"
           className={styles.searchInput}
           value={search}
           onChange={(event) => {

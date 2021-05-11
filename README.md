@@ -1,15 +1,29 @@
 # Vinted Clone - React/Next.js
 
-<img src="https://github.com/teddy-beau/vinted-front/blob/main/src/assets/images/vinted-logo.png?raw=true" alt="Vinted logo" width="170" />
-<br />
-<br />
-<a href="https://vinted-teddy.netlify.app/" target="_blank" rel="noreferrer" >Live site (Netlify deploy)</a>
+<div align="center">
+<img src="./assets/images/logo.png" alt="Vinted logo" width="170" />
 <br />
 <a href="https://github.com/Alexandrebelin/Vinted-backend" target="_blank" rel="noreferrer" >Backend repository</a>
 <br />
 <br />
-<img src="./_preview/vinted-login-buy.gif" alt="Gif login and purchase" width="600" />
-</div>
+
+**Login and purchase:**
+
+<img src="./_preview/pay.gif" alt="Gif login and purchase" width="600" />
+<br />
+<br />
+
+**Searching for an article:**
+
+<img src="./_preview/search.gif" alt="search an article" width="600" />
+<br />
+<br />
+
+**Publish an article:**
+
+<img src="./_preview/publish.gif" alt="publish an article" width="600" />
+<br />
+<br />
 
 ## Stack & Features
 
@@ -37,33 +51,15 @@ Pay and buy with Stripe
 
 <div align="center">
 
-**Homepage with dynamic search filters:**
-
-<img src="./_preview/vinted-home.png" alt="Screenshot Vinted Homepage" width="600"/>
-<br />
-<br />
-
-**Signup modal:**
-
-<img src="./_preview/vinted-signup.png" alt="Screenshot Vinted Sign up" width="600"/>
-<br />
-<br />
-
-**Publishing an offer:**
-
-<img src="./_preview/vinted-publish.png" alt="Screenshot Vinted Publish" width="600"/>
-<br />
-<br />
-
 **Offer page:**
 
-<img src="./_preview/vinted-offer.png" alt="Screenshot Vinted Offer" width="600"/>
+<img src="./_preview/screen1.png" alt="Screenshot Vinted Offer" width="600"/>
 <br />
 <br />
 
 **Checkout (payment with Stripe):**
 
-<img src="./_preview/vinted-checkout.png" alt="Screenshot Vinted Checkout" width="600"/></div>
+<img src="./_preview/screen2.png" alt="Screenshot Vinted Checkout" width="600"/></div>
 
 ## Getting Started
 

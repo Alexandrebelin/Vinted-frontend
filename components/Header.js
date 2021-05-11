@@ -26,7 +26,7 @@ const Header = () => {
 
       {token ? (
         <button onClick={handlDelete} className={styles.buttonLogout}>
-          Log out
+          Se déconnecter
         </button>
       ) : (
         <div>
@@ -34,14 +34,14 @@ const Header = () => {
             <button
               className={`${styles.headerButton} ${styles.buttonLoginSignup} ${styles.buttonSignup}`}
             >
-              Sign up
+              S'inscrire
             </button>
           </Link>
           <Link href="/login">
             <button
               className={`${styles.headerButton} ${styles.buttonLoginSignup}`}
             >
-              Log in
+              Se connecter
             </button>
           </Link>
         </div>
@@ -49,13 +49,13 @@ const Header = () => {
       {token ? (
         <Link href="/publish">
           <button className={`${styles.headerButton} ${styles.buttonSold}`}>
-            Sell now
+            Vends tes articles
           </button>
         </Link>
       ) : (
         <Link href="/login">
           <button className={`${styles.headerButton} ${styles.buttonSold}`}>
-            Sell now
+            Vends tes articles
           </button>
         </Link>
       )}

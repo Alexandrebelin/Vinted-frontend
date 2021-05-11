@@ -25,6 +25,7 @@
   border: none;
   outline: none;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .searchInput::placeholder {
@@ -48,10 +49,12 @@
   font-size: 12px;
   outline: none;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttonLogout {
   height: 30px;
+  width: 115px;
   border-radius: 5px;
   font-family: "Maison Neue";
   font-size: 12px;
@@ -60,6 +63,7 @@
   background-color: white;
   color: #c2175b;
   border: 1px solid #c2175b;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttonLoginSignup {
