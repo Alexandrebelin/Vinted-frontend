@@ -7,6 +7,9 @@
 <a href="https://github.com/Alexandrebelin/Vinted-backend" target="_blank" rel="noreferrer" >Backend repository</a>
 <br />
 <br />
+  ## Stack & Features
+
+Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).. The backend is developed with [Node JS](https://github.com/Alexandrebelin/Vinted-backend) and the database uses Mongo DB.
 
 **Login and purchase:**
 
@@ -29,9 +32,7 @@
 <br />
 <br />
 
-## Stack & Features
 
-Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).. The backend is developed with [Node JS](https://github.com/Alexandrebelin/Vinted-backend) and the database uses Mongo DB.
 
 
 
