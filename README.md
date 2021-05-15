@@ -3,13 +3,19 @@
 <div align="center">
 <img src="./assets/images/logo.png" alt="Vinted logo" width="170" />
 <br />
+  <br />
 <a href="https://github.com/Alexandrebelin/Vinted-backend" target="_blank" rel="noreferrer" >Backend repository</a>
 <br />
 <br />
 
+### Stack & Features
+
+Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).. The backend is developed with [Node JS](https://github.com/Alexandrebelin/Vinted-backend) and the database uses Mongo DB.
+
 **Login and purchase:**
 
 <img src="./_preview/pay.gif" alt="Gif login and purchase" width="600" />
+<br />
 <br />
 <br />
 
@@ -18,33 +24,41 @@
 <img src="./_preview/search.gif" alt="search an article" width="600" />
 <br />
 <br />
+<br />
 
 **Publish an article:**
 
 <img src="./_preview/publish.gif" alt="publish an article" width="600" />
 <br />
 <br />
+<br />
 
-## Stack & Features
 
-Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).. The backend is developed with [Node JS](https://github.com/Alexandrebelin/Vinted-backend) and the database uses Mongo DB cloud-based solution.
 
-_Please note that this project should be viewed on desktop only, it has very basic responsiveness and isn't well suported on mobile devices at the moment._
+
 
 ### Main dependencies
 
-- Stripe (payment)
-- Axios (API requests)
-- cookie (cookie management)
-- react-cookie (cookie management)
-- next-image (file upload)
-- Fontawesome (icons)
+ Stripe (payment)
+ <br />
+ Axios (API requests)
+ <br />
+ cookie (cookie management)
+ <br />
+ react-cookie (cookie management)
+ <br />
+ next-image (file upload)
+ <br />
+ Fontawesome (icons)
 
 ### Main features
 
 Login and Signup
-Search with filters
-Publish and modify an offer
+<br />
+Search
+<br />
+Publish an offer
+<br />
 Pay and buy with Stripe
 
 ## Screenshots
