@@ -31,18 +31,10 @@ const Header = () => {
       ) : (
         <div>
           <Link href="/signup">
-            <button
-              className={`${styles.headerButton} ${styles.buttonLoginSignup} ${styles.buttonSignup}`}
-            >
-              S'inscrire
-            </button>
+            <button className={styles.headerButton}>S'inscrire</button>
           </Link>
           <Link href="/login">
-            <button
-              className={`${styles.headerButton} ${styles.buttonLoginSignup}`}
-            >
-              Se connecter
-            </button>
+            <button className={styles.headerButton}>Se connecter</button>
           </Link>
         </div>
       )}

@@ -17,10 +17,13 @@ const Login = () => {
   const handleSignIn = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3100/user/login", {
-        email: email,
-        password: password,
-      });
+      const response = await axios.post(
+        "https://vinted-backend-belin.herokuapp.com/user/login",
+        {
+          email: email,
+          password: password,
+        }
+      );
       const token = response.data.token;
       if (token) {
         setCookie("user", token, {

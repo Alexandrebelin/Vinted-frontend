@@ -200,6 +200,7 @@
 
 .formValidtaion {
   background-color: #0ab1ba;
+  cursor: pointer;
   color: white;
   border: none;
   font: inherit;

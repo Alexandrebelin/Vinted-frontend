@@ -24,7 +24,7 @@ export const getServerSideProps = async (context) => {
     const title = context.query.title;
 
     const response = await axios.get(
-      `http://localhost:3100/offers?title=${title}`
+      `https://vinted-backend-belin.herokuapp.com/offers?title=${title}`
     );
 
     return {

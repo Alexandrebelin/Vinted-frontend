@@ -50,6 +50,9 @@
   outline: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  background-color: white;
+  color: #2cb1ba;
 }
 
 .buttonLogout {
@@ -66,16 +69,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.buttonLoginSignup {
-  background-color: white;
-  color: #2cb1ba;
-}
-
 .buttonSold {
   background-color: #2cb1ba;
   color: white;
-}
-
-.buttonSignup {
-  margin-right: 20px;
 }

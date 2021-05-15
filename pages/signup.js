@@ -26,7 +26,7 @@ const Signup = () => {
       formData.append("username", username);
 
       const response = await axios.post(
-        "http://localhost:3100/user/signup",
+        "https://vinted-backend-belin.herokuapp.com/user/signup",
         formData
       );
       const token = response.data.token;
@@ -45,7 +45,7 @@ const Signup = () => {
         alert("Une erreur est survenue, veuillez réssayer.");
       }
     } catch (error) {
-      console.log(err);
+      console.log(error);
     }
   };
 

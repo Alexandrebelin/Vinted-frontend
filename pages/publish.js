@@ -40,7 +40,7 @@ const Publish = () => {
       formData.append("brand", selectedBrand);
 
       const response = await axios.post(
-        "http://localhost:3100/offer/publish",
+        "https://vinted-backend-belin.herokuapp.com/offer/publish",
         formData,
         {
           headers: {

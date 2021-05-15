@@ -79,7 +79,9 @@ export const getServerSideProps = async (context) => {
   try {
     const id = context.query.id;
 
-    const response = await axios.get(`http://localhost:3100/offer/${id}`);
+    const response = await axios.get(
+      `https://vinted-backend-belin.herokuapp.com/offer/${id}`
+    );
 
     return {
       props: {

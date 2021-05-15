@@ -3,6 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 
+import styles from "../styles/Payment.module.css";
+
 const CheckoutForm = ({ productName, total }) => {
   const [isPaid, setIsPaid] = useState(false);
   const stripe = useStripe();
@@ -18,11 +20,14 @@ const CheckoutForm = ({ productName, total }) => {
         name: token,
       });
 
-      const response = await axios.post("http://localhost:3100/payment", {
-        amount: total,
-        title: productName,
-        token: stripeResponse.token.id,
-      });
+      const response = await axios.post(
+        "https://vinted-backend-belin.herokuapp.com/payment",
+        {
+          amount: total,
+          title: productName,
+          token: stripeResponse.token.id,
+        }
+      );
       if (response.data) {
         setIsPaid(true);
       } else {
@@ -34,7 +39,7 @@ const CheckoutForm = ({ productName, total }) => {
   };
 
   return isPaid ? (
-    <p>Merci pour votre achat.</p>
+    <p className={styles.paymentValidate}>Merci pour votre achat.</p>
   ) : (
     <form onSubmit={handleSubmit}>
       <CardElement />
