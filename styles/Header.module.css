@@ -14,10 +14,13 @@
 
 .searchContainer {
   position: relative;
+  width: 100%;
+  max-width: 590px;
+  min-width: 100px;
 }
 
 .searchInput {
-  width: 590px;
+  width: 100%;
   padding-left: 40px;
   background-color: #f5f6f7;
   border-radius: 5px;
@@ -72,4 +75,46 @@
 .buttonSold {
   background-color: #2cb1ba;
   color: white;
+}
+
+@media (max-width: 1280px) {
+  .searchContainer {
+    position: relative;
+    width: 100%;
+    max-width: 590px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .searchContainer {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    min-width: 100px;
+    margin-left: -120px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    min-width: 100px;
+    margin-left: -120px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 576px) {
+  .searchContainer {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    min-width: 100px;
+    margin-left: -120px;
+    transition: all 0.3s ease-in-out;
+  }
 }
