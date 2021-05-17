@@ -3,9 +3,7 @@
 <div align="center">
 <img src="./assets/images/logo.png" alt="Vinted logo" width="170" />
 <br />
-  <br />
-  <a href="https://vinted-frontend.vercel.app/" target="_blank" rel="noreferrer" >Live site (Vercel deploy)</a>
-  <br />
+ 
   <br />
 <a href="https://github.com/Alexandrebelin/Vinted-backend" target="_blank" rel="noreferrer" >Backend repository</a>
 <br />
