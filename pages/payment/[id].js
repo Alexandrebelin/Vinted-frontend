@@ -27,7 +27,7 @@ const Payment = ({ data }) => {
   const total = roudDecimal(number, 2);
 
   return (
-    <div className={styles.paymentWrapper}>
+    <section className={styles.paymentWrapper}>
       <div className={styles.paymentContainer}>
         <ProductCheckout price={data.price} total={total} />
         <div className={styles.paymentCard}>
@@ -36,14 +36,14 @@ const Payment = ({ data }) => {
             <span className={styles.bold}> {data.name}</span>. Vous allez payer
             <span className={styles.bold}> {total} €</span> (frais de protection
             et frais de port inclus).
-            <div className={styles.divider}></div>
+            <div className={styles.divider} />
             <Elements stripe={stripePromise}>
               <CheckoutForm productName={data.name} total={total} />
             </Elements>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

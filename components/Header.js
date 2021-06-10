@@ -19,6 +19,7 @@ const Header = () => {
             src={require("../assets/images/logo.png")}
             alt="logo vinted"
             className={styles.headerLogo}
+            data-testid="logo"
           />
         </Link>
       </div>

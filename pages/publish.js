@@ -60,7 +60,7 @@ const Publish = () => {
   };
 
   return (
-    <div className={styles.publishMain}>
+    <section className={styles.publishMain}>
       <div className={styles.publishContainer}>
         <h2>Vends ton article</h2>
         <form onSubmit={handleSubmit}>
@@ -231,7 +231,7 @@ const Publish = () => {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -13,7 +13,7 @@ const Offer = ({ data }) => {
 
   return (
     <div className={styles.offerBody}>
-      <div className={styles.offerContainer}>
+      <section className={styles.offerContainer}>
         <div>
           {data.image.length === 0 ? (
             <img
@@ -29,7 +29,7 @@ const Offer = ({ data }) => {
             />
           )}
         </div>
-        <div className={styles.offerInfos}>
+        <section className={styles.offerInfos}>
           <div>
             <span className={styles.offerPrice}>{data.price} €</span>
             <ul className={styles.offerList}>
@@ -67,8 +67,8 @@ const Offer = ({ data }) => {
               <button className={styles.buttonBuy}>Acheter</button>
             </Link>
           )}
-        </div>
-      </div>
+        </section>
+      </section>
     </div>
   );
 };
