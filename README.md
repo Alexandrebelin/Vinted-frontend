@@ -19,12 +19,16 @@ Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](http
 <br />
 <br />
 <br />
+ <br />
+<br />
 
 **Searching for an article:**
 
 <img src="./_preview/search.gif" alt="search an article" width="600" />
 <br />
 <br />
+<br />
+ <br />
 <br />
 
 **Publish an article:**
@@ -33,9 +37,8 @@ Website built with [Next.js](https://nextjs.org/) using [`create-next-app`](http
 <br />
 <br />
 <br />
-
-
-
+ <br />
+<br />
 
 
 ### Main dependencies
